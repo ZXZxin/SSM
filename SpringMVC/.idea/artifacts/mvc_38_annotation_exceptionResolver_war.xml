@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_38_annotation_exceptionResolver:war">
+    <output-path>$PROJECT_DIR$/mvc_38_annotation_exceptionResolver/target</output-path>
+    <root id="archive" name="mvc_38_annotation_exceptionResolver.war">
+      <element id="artifact" artifact-name="mvc_38_annotation_exceptionResolver:war exploded" />
+    </root>
+  </artifact>
+</component>

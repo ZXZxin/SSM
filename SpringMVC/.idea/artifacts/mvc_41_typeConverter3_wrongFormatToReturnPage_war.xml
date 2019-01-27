@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_41_typeConverter3_wrongFormatToReturnPage:war">
+    <output-path>$PROJECT_DIR$/mvc_41_typeConverter3_wrongFormatToReturnPage/target</output-path>
+    <root id="archive" name="mvc_41_typeConverter3_wrongFormatToReturnPage.war">
+      <element id="artifact" artifact-name="mvc_41_typeConverter3_wrongFormatToReturnPage:war exploded" />
+    </root>
+  </artifact>
+</component>

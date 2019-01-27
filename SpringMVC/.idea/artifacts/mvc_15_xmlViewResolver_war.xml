@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_15_xmlViewResolver:war">
+    <output-path>$PROJECT_DIR$/mvc_15_xmlViewResolver/target</output-path>
+    <root id="archive" name="mvc_15_xmlViewResolver.war">
+      <element id="artifact" artifact-name="mvc_15_xmlViewResolver:war exploded" />
+    </root>
+  </artifact>
+</component>

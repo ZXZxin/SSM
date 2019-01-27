@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_16_ResourcesBundleViewResolver:war">
+    <output-path>$PROJECT_DIR$/mvc_16_ResourcesBundleViewResolver/target</output-path>
+    <root id="archive" name="mvc_16_ResourcesBundleViewResolver.war">
+      <element id="artifact" artifact-name="mvc_16_ResourcesBundleViewResolver:war exploded" />
+    </root>
+  </artifact>
+</component>

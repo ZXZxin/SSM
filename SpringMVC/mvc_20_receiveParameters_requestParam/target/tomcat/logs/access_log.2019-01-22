@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:18:24:02 +0800] "GET /mvc_20_receiveParameters_requestParam HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:18:24:03 +0800] "GET /mvc_20_receiveParameters_requestParam HTTP/1.1" 302 - http-bio-9091-exec-2 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:18:24:03 +0800] "GET /mvc_20_receiveParameters_requestParam/ HTTP/1.1" 200 485 http-bio-9091-exec-3 1215
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:18:24:03 +0800] "GET /mvc_20_receiveParameters_requestParam/ HTTP/1.1" 200 485 http-bio-9091-exec-4 11
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:18:24:11 +0800] "POST /mvc_20_receiveParameters_requestParam/test/register.do HTTP/1.1" 200 206 http-bio-9091-exec-6 130

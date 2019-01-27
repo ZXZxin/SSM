@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:07:24 +0800] "GET /mvc_51_ssm_xml HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:07:25 +0800] "GET /mvc_51_ssm_xml/ HTTP/1.1" 200 413 http-bio-9091-exec-3 1170
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:07:26 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-9091-exec-4 0
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:07:40 +0800] "POST /mvc_51_ssm_xml/zxin/register.do HTTP/1.1" 200 203 http-bio-9091-exec-5 404
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:12:08 +0800] "GET /mvc_51_ssm_xml HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:12:08 +0800] "GET /mvc_51_ssm_xml/ HTTP/1.1" 200 413 http-bio-9091-exec-3 287
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:12:15 +0800] "POST /mvc_51_ssm_xml/zxin/register.do HTTP/1.1" 200 203 http-bio-9091-exec-4 335

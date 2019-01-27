@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_34_redirect_page_modelAndView:war">
+    <output-path>$PROJECT_DIR$/mvc_34_redirect_page_modelAndView/target</output-path>
+    <root id="archive" name="mvc_34_redirect_page_modelAndView.war">
+      <element id="artifact" artifact-name="mvc_34_redirect_page_modelAndView:war exploded" />
+    </root>
+  </artifact>
+</component>

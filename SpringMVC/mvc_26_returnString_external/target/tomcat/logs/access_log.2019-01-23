@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:41:30 +0800] "GET /mvc_26_returnString_external HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:41:30 +0800] "GET /mvc_26_returnString_external/ HTTP/1.1" 200 645 http-bio-9091-exec-3 744
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:41:35 +0800] "GET /mvc_26_returnString_external/zxin/some.do HTTP/1.1" 302 - http-bio-9091-exec-4 42
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:41:45 +0800] "GET /mvc_26_returnString_external/zxin/some.do HTTP/1.1" 302 - http-bio-9091-exec-5 3

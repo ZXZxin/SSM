@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_43_initDataBinder:war">
+    <output-path>$PROJECT_DIR$/mvc_43_initDataBinder/target</output-path>
+    <root id="archive" name="mvc_43_initDataBinder.war">
+      <element id="artifact" artifact-name="mvc_43_initDataBinder:war exploded" />
+    </root>
+  </artifact>
+</component>

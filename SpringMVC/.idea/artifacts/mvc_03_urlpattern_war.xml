@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_03_urlpattern:war">
+    <output-path>$PROJECT_DIR$/mvc_03_urlpattern/target</output-path>
+    <root id="archive" name="mvc_03_urlpattern.war">
+      <element id="artifact" artifact-name="mvc_03_urlpattern:war exploded" />
+    </root>
+  </artifact>
+</component>

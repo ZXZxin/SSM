@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_50_permissionInterceptor:war">
+    <output-path>$PROJECT_DIR$/mvc_50_permissionInterceptor/target</output-path>
+    <root id="archive" name="mvc_50_permissionInterceptor.war">
+      <element id="artifact" artifact-name="mvc_50_permissionInterceptor:war exploded" />
+    </root>
+  </artifact>
+</component>

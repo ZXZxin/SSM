@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:17:12:02 +0800] "GET /mvc_19_receiveParameters_Property HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:17:12:02 +0800] "GET /mvc_19_receiveParameters_Property HTTP/1.1" 302 - http-bio-9091-exec-2 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:17:12:03 +0800] "GET /mvc_19_receiveParameters_Property/ HTTP/1.1" 200 432 http-bio-9091-exec-3 738
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:17:12:03 +0800] "GET /mvc_19_receiveParameters_Property/ HTTP/1.1" 200 432 http-bio-9091-exec-4 5
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:17:12:17 +0800] "POST /mvc_19_receiveParameters_Property/test/register.do HTTP/1.1" 200 208 http-bio-9091-exec-6 105
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:17:15:41 +0800] "GET /mvc_19_receiveParameters_Property HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:17:15:41 +0800] "GET /mvc_19_receiveParameters_Property HTTP/1.1" 302 - http-bio-9091-exec-2 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:17:15:42 +0800] "GET /mvc_19_receiveParameters_Property/ HTTP/1.1" 200 476 http-bio-9091-exec-3 1013
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:17:15:42 +0800] "GET /mvc_19_receiveParameters_Property/ HTTP/1.1" 200 476 http-bio-9091-exec-4 7
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:17:15:42 +0800] "GET /mvc_19_receiveParameters_Property/images/pic.jpg HTTP/1.1" 404 949 http-bio-9091-exec-6 62
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:17:15:42 +0800] "GET /mvc_19_receiveParameters_Property/images/pic.jpg HTTP/1.1" 404 949 http-bio-9091-exec-5 3

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!--多对一的关系-->
+<mapper namespace="com.zxin.dao.IMinisterDao">
+
+    <resultMap id="ministerMapper" type="Minister">
+        <id column="mid" property="mid"/>
+        <result column="mname" property="mname"/>
+
+        <!--这个不是collection (一对多) , 这个是association(多对一)-->
+        <association property="country" javaType="Country">
+            <id column="cid" property="cid"/>
+            <result column="cname" property="cname"/>
+        </association>
+    </resultMap>
+
+    <!--通过mid来查询 Minister-->
+    <select id="selectMinisterById" resultMap="ministerMapper">
+        select mid, mname, cid, cname
+        from mybatis_12_minister, mybatis_12_country
+        where countryId = cid and mid = #{xxx}
+    </select>
+
+</mapper>

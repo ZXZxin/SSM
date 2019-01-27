@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--Mapper动态代理一定一定要这样使用，是接口的全限定性类名-->
+<mapper namespace="com.zxin.dao.IStudentDao">
+
+    <select id="selectStudentsByCondition" resultType="Student">
+        select id,name,age,score
+        from mybatis_05_student
+        where name like '%' #{nameCon} '%'
+        and age > #{ageCon}
+        and score > #{stu.score}
+    </select>
+
+
+
+</mapper>

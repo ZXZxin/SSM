@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:18:17:13 +0800] "GET /mvc_55_ssm_annotation_3 HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:18:17:14 +0800] "GET /mvc_55_ssm_annotation_3/ HTTP/1.1" 200 52 http-bio-9091-exec-3 850
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:18:17:55 +0800] "GET /mvc_55_ssm_annotation_3 HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:18:17:56 +0800] "GET /mvc_55_ssm_annotation_3/ HTTP/1.1" 200 422 http-bio-9091-exec-3 864
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:18:17:59 +0800] "GET /mvc_55_ssm_annotation_3 HTTP/1.1" 302 - http-bio-9091-exec-4 0
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:18:17:59 +0800] "GET /mvc_55_ssm_annotation_3/ HTTP/1.1" 200 422 http-bio-9091-exec-5 1
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:18:18:09 +0800] "POST /mvc_55_ssm_annotation_3/zxin/register.do HTTP/1.1" 500 8069 http-bio-9091-exec-6 23
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:18:19:18 +0800] "GET /mvc_55_ssm_annotation_3 HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:18:19:18 +0800] "GET /mvc_55_ssm_annotation_3/ HTTP/1.1" 200 422 http-bio-9091-exec-3 180
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:18:19:24 +0800] "POST /mvc_55_ssm_annotation_3/zxin/register.do HTTP/1.1" 200 203 http-bio-9091-exec-4 991

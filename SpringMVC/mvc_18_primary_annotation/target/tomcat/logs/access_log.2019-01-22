@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:16:57:25 +0800] "GET /mvc_17_viewResolverOrder HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:16:57:26 +0800] "GET /mvc_17_viewResolverOrder HTTP/1.1" 302 - http-bio-9091-exec-2 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:16:57:27 +0800] "GET /mvc_17_viewResolverOrder/ HTTP/1.1" 200 641 http-bio-9091-exec-3 1397
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:16:57:27 +0800] "GET /mvc_17_viewResolverOrder/ HTTP/1.1" 200 641 http-bio-9091-exec-4 13
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:16:58:10 +0800] "GET /mvc_18_primary_annotation HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:16:58:10 +0800] "GET /mvc_18_primary_annotation HTTP/1.1" 302 - http-bio-9091-exec-3 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:16:58:12 +0800] "GET /mvc_18_primary_annotation/ HTTP/1.1" 200 642 http-bio-9091-exec-4 6
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:16:58:12 +0800] "GET /mvc_18_primary_annotation/ HTTP/1.1" 200 642 http-bio-9091-exec-2 1464
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:16:58:29 +0800] "GET /mvc_18_primary_annotation/second.do HTTP/1.1" 404 949 http-bio-9091-exec-5 36
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:16:58:40 +0800] "GET /mvc_18_primary_annotation/second.do?name=zx HTTP/1.1" 404 949 http-bio-9091-exec-7 1
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:16:59:00 +0800] "GET /mvc_18_primary_annotation/zxin/second.do?name=zx HTTP/1.1" 200 225 http-bio-9091-exec-8 193

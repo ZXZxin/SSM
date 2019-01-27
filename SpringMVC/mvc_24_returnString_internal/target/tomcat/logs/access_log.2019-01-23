@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:14:58 +0800] "GET /mvc_24_returnString_internal HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:14:59 +0800] "GET /mvc_24_returnString_internal/ HTTP/1.1" 200 645 http-bio-9091-exec-3 1028
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:15:00 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-9091-exec-4 0
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:15:01 +0800] "GET /mvc_24_returnString_internal/some.do HTTP/1.1" 404 949 http-bio-9091-exec-5 21
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:15:20 +0800] "GET /mvc_24_returnString_internal/zxin/some.do HTTP/1.1" 404 949 http-bio-9091-exec-6 5
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:15:33 +0800] "GET /mvc_24_returnString_internal/zxin/some.do HTTP/1.1" 404 949 http-bio-9091-exec-8 2
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:20:07 +0800] "GET /mvc_24_returnString_internal HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:20:08 +0800] "GET /mvc_24_returnString_internal/ HTTP/1.1" 200 645 http-bio-9091-exec-3 109
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:20:13 +0800] "GET /mvc_24_returnString_internal/zxin/some.do HTTP/1.1" 200 182 http-bio-9091-exec-4 684

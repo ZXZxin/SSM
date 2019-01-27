@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybatis_01_primary" />
+        <module name="mybatis_02_primary_utilclass" />
+        <module name="mybatis_03_primary_thefourelements_properties" />
+        <module name="mybatis_04_primary_typeAliases" />
+        <module name="mybatis_05_curd" />
+        <module name="mybatis_06_propertycolumnunsame" />
+        <module name="mybatis_07_propertycolumnunsame2_resultMap" />
+        <module name="mybatis_08_mapperDynamicProxy" />
+        <module name="mybatis_09_selectByCondition" />
+        <module name="mybatis_09_selectByMap" />
+        <module name="mybatis_10_selectByCondition2" />
+        <module name="mybatis_11_dynamicSql" />
+        <module name="mybatis_12_one2many" />
+        <module name="mybatis_13_one2many2" />
+        <module name="mybatis_14_many2one" />
+        <module name="mybatis_15_many2one2" />
+        <module name="mybatis_16_oneself_one2many" />
+        <module name="mybatis_17_oneself_one2many2" />
+        <module name="mybatis_18_oneself_many2one" />
+        <module name="mybatis_19_many2many" />
+        <module name="mybatis_20_one2many2_lazyLoad" />
+        <module name="mybatis_21_oneLevelSqlSessionCache" />
+        <module name="mybatis_22_secondLevelCache_bulidin" />
+        <module name="mybatis_23_annotation" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mybatis" target="1.7" />
+      <module name="mybatis_01_primary" target="1.7" />
+      <module name="mybatis_02_primary_utilclass" target="1.7" />
+      <module name="mybatis_03_primary_thefourelements_properties" target="1.7" />
+      <module name="mybatis_04_primary_typeAliases" target="1.7" />
+      <module name="mybatis_05_curd" target="1.7" />
+      <module name="mybatis_06_propertycolumnunsame" target="1.7" />
+      <module name="mybatis_07_propertycolumnunsame2_resultMap" target="1.7" />
+      <module name="mybatis_08_mapperDynamicProxy" target="1.7" />
+      <module name="mybatis_09_selectByCondition" target="1.7" />
+      <module name="mybatis_09_selectByMap" target="1.7" />
+      <module name="mybatis_10_selectByCondition2" target="1.7" />
+      <module name="mybatis_11_dynamicSql" target="1.7" />
+      <module name="mybatis_12_one2many" target="1.7" />
+      <module name="mybatis_13_one2many2" target="1.7" />
+      <module name="mybatis_14_many2one" target="1.7" />
+      <module name="mybatis_15_many2one2" target="1.7" />
+      <module name="mybatis_16_oneself_one2many" target="1.7" />
+      <module name="mybatis_17_oneself_one2many2" target="1.7" />
+      <module name="mybatis_18_many2one" target="1.7" />
+      <module name="mybatis_18_oneself_many2one" target="1.7" />
+      <module name="mybatis_19_many2many" target="1.7" />
+      <module name="mybatis_20_one2many2_lazyLoad" target="1.7" />
+      <module name="mybatis_21_OneLevelsqlSessionCache" target="1.7" />
+      <module name="mybatis_21_oneLevelSqlSessionCache" target="1.7" />
+      <module name="mybatis_22_secondLevelCache_bulidin" target="1.7" />
+      <module name="mybatis_23_annotation" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

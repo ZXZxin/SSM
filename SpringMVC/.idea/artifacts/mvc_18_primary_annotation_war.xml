@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_18_primary_annotation:war">
+    <output-path>$PROJECT_DIR$/mvc_18_primary_annotation/target</output-path>
+    <root id="archive" name="mvc_18_primary_annotation.war">
+      <element id="artifact" artifact-name="mvc_18_primary_annotation:war exploded" />
+    </root>
+  </artifact>
+</component>

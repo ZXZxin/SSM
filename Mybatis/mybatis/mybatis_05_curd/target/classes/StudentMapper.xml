@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="test">
+
+    <insert id="insertStudent">
+        insert into mybatis_05_student(name,age,score) values(#{name}, #{age}, #{score})
+    </insert>
+
+    <insert id="insertStudentCacheId">
+        insert into mybatis_05_student(name,age,score) values(#{name}, #{age}, #{score})
+        <selectKey resultType="int" keyProperty="id" order="AFTER"> <!--orcale中是before,这里不配也行，注解开发一定要配置-->
+            select @@identity
+        </selectKey>
+    </insert>
+
+    <delete id="deleteStudentById">
+        delete from mybatis_05_student where id=#{xxx}  <!--注意这个xxx是随意的的-->
+    </delete>
+
+    <update id="updateStudent">
+        update mybatis_05_student set name=#{name}, age=#{age}, score=#{score} where id=#{id}
+    </update>
+
+    <select id="selectAllStudents" resultType="Student"> <!--注意resultType一定要注意这个要写-->
+        select id,name,age,score from mybatis_05_student
+    </select>
+
+    <select id="selectStudentById" resultType="Student">
+        select id,name,age,score from mybatis_05_student where id=#{jjj}
+    </select>
+
+    <!--模糊查询, 一般使用第一种-->
+    <select id="selectStudentsByName" resultType="Student">
+        select id,name,age,score from mybatis_05_student where name like '%' #{xxx} '%'
+        <!-- select id,name,age,score from mybatis_05_student where name like concat('%', #{xxx}, '%') -->
+        <!-- select id,name,age,score from mybatis_05_student where name like '%${value}%' -->
+    </select>
+</mapper>

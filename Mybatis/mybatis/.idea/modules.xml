@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mybatis.iml" filepath="$PROJECT_DIR$/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_01_primary/mybatis_01_primary.iml" filepath="$PROJECT_DIR$/mybatis_01_primary/mybatis_01_primary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_02_primary_utilclass/mybatis_02_primary_utilclass.iml" filepath="$PROJECT_DIR$/mybatis_02_primary_utilclass/mybatis_02_primary_utilclass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_03_primary_thefourelements_properties/mybatis_03_primary_thefourelements_properties.iml" filepath="$PROJECT_DIR$/mybatis_03_primary_thefourelements_properties/mybatis_03_primary_thefourelements_properties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_04_primary_typeAliases/mybatis_04_primary_typeAliases.iml" filepath="$PROJECT_DIR$/mybatis_04_primary_typeAliases/mybatis_04_primary_typeAliases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_05_curd/mybatis_05_curd.iml" filepath="$PROJECT_DIR$/mybatis_05_curd/mybatis_05_curd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_06_propertycolumnunsame/mybatis_06_propertycolumnunsame.iml" filepath="$PROJECT_DIR$/mybatis_06_propertycolumnunsame/mybatis_06_propertycolumnunsame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_07_propertycolumnunsame2_resultMap/mybatis_07_propertycolumnunsame2_resultMap.iml" filepath="$PROJECT_DIR$/mybatis_07_propertycolumnunsame2_resultMap/mybatis_07_propertycolumnunsame2_resultMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_08_mapperDynamicProxy/mybatis_08_mapperDynamicProxy.iml" filepath="$PROJECT_DIR$/mybatis_08_mapperDynamicProxy/mybatis_08_mapperDynamicProxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_09_selectByCondition/mybatis_09_selectByCondition.iml" filepath="$PROJECT_DIR$/mybatis_09_selectByCondition/mybatis_09_selectByCondition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_10_selectByCondition2/mybatis_10_selectByCondition2.iml" filepath="$PROJECT_DIR$/mybatis_10_selectByCondition2/mybatis_10_selectByCondition2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_11_dynamicSql/mybatis_11_dynamicSql.iml" filepath="$PROJECT_DIR$/mybatis_11_dynamicSql/mybatis_11_dynamicSql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_12_one2many/mybatis_12_one2many.iml" filepath="$PROJECT_DIR$/mybatis_12_one2many/mybatis_12_one2many.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_13_one2many2/mybatis_13_one2many2.iml" filepath="$PROJECT_DIR$/mybatis_13_one2many2/mybatis_13_one2many2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_14_many2one/mybatis_14_many2one.iml" filepath="$PROJECT_DIR$/mybatis_14_many2one/mybatis_14_many2one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_15_many2one2/mybatis_15_many2one2.iml" filepath="$PROJECT_DIR$/mybatis_15_many2one2/mybatis_15_many2one2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_16_oneself_one2many/mybatis_16_oneself_one2many.iml" filepath="$PROJECT_DIR$/mybatis_16_oneself_one2many/mybatis_16_oneself_one2many.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_17_oneself_one2many2/mybatis_17_oneself_one2many2.iml" filepath="$PROJECT_DIR$/mybatis_17_oneself_one2many2/mybatis_17_oneself_one2many2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_18_oneself_many2one/mybatis_18_oneself_many2one.iml" filepath="$PROJECT_DIR$/mybatis_18_oneself_many2one/mybatis_18_oneself_many2one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_19_many2many/mybatis_19_many2many.iml" filepath="$PROJECT_DIR$/mybatis_19_many2many/mybatis_19_many2many.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_20_one2many2_lazyLoad/mybatis_20_one2many2_lazyLoad.iml" filepath="$PROJECT_DIR$/mybatis_20_one2many2_lazyLoad/mybatis_20_one2many2_lazyLoad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_21_oneLevelSqlSessionCache/mybatis_21_oneLevelSqlSessionCache.iml" filepath="$PROJECT_DIR$/mybatis_21_oneLevelSqlSessionCache/mybatis_21_oneLevelSqlSessionCache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_22_secondLevelCache_bulidin/mybatis_22_secondLevelCache_bulidin.iml" filepath="$PROJECT_DIR$/mybatis_22_secondLevelCache_bulidin/mybatis_22_secondLevelCache_bulidin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_23_annotation/mybatis_23_annotation.iml" filepath="$PROJECT_DIR$/mybatis_23_annotation/mybatis_23_annotation.iml" />
+    </modules>
+  </component>
+</project>

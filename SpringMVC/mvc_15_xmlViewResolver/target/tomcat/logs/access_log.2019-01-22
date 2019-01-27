@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:59:18 +0800] "GET /mvc_15_xmlViewResolver HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:59:19 +0800] "GET /mvc_15_xmlViewResolver/ HTTP/1.1" 200 639 http-bio-9091-exec-3 949
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:59:32 +0800] "GET /mvc_15_xmlViewResolver/my.do HTTP/1.1" 302 - http-bio-9091-exec-4 42

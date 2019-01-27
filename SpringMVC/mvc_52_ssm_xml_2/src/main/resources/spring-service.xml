@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--注册Service-->
+    <bean id="studentService" class="com.zxin.services.StudentServiceImpl">
+        <!--这里不能再使用studentDao(已经删除), 所以使用接口的简单类名-->
+        <!-- 这里的Dao的注入需要使用ref属性，
+            若Dao的接口名的前两个字母是大写，则这里的值为接口的简单类名
+            若Dao的接口名的首字母是大写，第二个字母为小写，则这里的值为简单类名，但首字母要小写
+         -->
+        <property name="dao" ref="IStudentDao"></property>
+    </bean>
+
+</beans>

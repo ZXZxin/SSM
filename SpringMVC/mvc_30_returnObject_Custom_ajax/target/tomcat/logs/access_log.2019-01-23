@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:44:47 +0800] "GET /mvc_30_returnObject_Custom_ajax HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:44:48 +0800] "GET /mvc_30_returnObject_Custom_ajax/ HTTP/1.1" 200 536 http-bio-9091-exec-3 901
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:44:48 +0800] "GET /mvc_30_returnObject_Custom_ajax/js/jquery-1.8.3.js HTTP/1.1" 404 1051 http-bio-9091-exec-4 4
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:45:43 +0800] "GET /mvc_30_returnObject_Custom_ajax HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:45:44 +0800] "GET /mvc_30_returnObject_Custom_ajax/ HTTP/1.1" 200 591 http-bio-9091-exec-3 1196
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:45:44 +0800] "GET /mvc_30_returnObject_Custom_ajax/js/jquery-1.8.3.js HTTP/1.1" 404 1051 http-bio-9091-exec-4 3
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:46:39 +0800] "GET /mvc_30_returnObject_Custom_ajax HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:46:39 +0800] "GET /mvc_30_returnObject_Custom_ajax/ HTTP/1.1" 200 591 http-bio-9091-exec-3 155
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:46:39 +0800] "GET /mvc_30_returnObject_Custom_ajax/js/jquery-1.8.3.js HTTP/1.1" 200 267739 http-bio-9091-exec-4 3
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:46:41 +0800] "GET /mvc_30_returnObject_Custom_ajax/zxin/myAjax.do HTTP/1.1" 200 17 http-bio-9091-exec-5 82
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:47:17 +0800] "GET /mvc_30_returnObject_Custom_ajax/ HTTP/1.1" 200 591 http-bio-9091-exec-1 759
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:47:19 +0800] "GET /mvc_30_returnObject_Custom_ajax/ HTTP/1.1" 200 591 http-bio-9091-exec-2 10
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:16:47:20 +0800] "GET /mvc_30_returnObject_Custom_ajax/zxin/myAjax.do HTTP/1.1" 200 37 http-bio-9091-exec-5 78

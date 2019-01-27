@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_26_returnString_external:war">
+    <output-path>$PROJECT_DIR$/mvc_26_returnString_external/target</output-path>
+    <root id="archive" name="mvc_26_returnString_external.war">
+      <element id="artifact" artifact-name="mvc_26_returnString_external:war exploded" />
+    </root>
+  </artifact>
+</component>

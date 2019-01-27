@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--配置运行环境-->
+    <environments default="mysqlEM"> <!--environment可以有多个，这个默认使用下面的那个-->
+        <environment id="mysqlEM">
+            <transactionManager type="JDBC"/> <!--使用JDBC默认的事务管理器-->
+            <dataSource type="POOLED"> <!--数据库连接池-->
+                <property name="driver" value="com.mysql.jdbc.Driver"/> <!--加载的就是mysql的类(底层使用反射)-->
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+
+    <!--注册映射文件-->
+    <mappers>
+        <mapper resource="StudentMapper.xml"/>
+    </mappers>
+</configuration>

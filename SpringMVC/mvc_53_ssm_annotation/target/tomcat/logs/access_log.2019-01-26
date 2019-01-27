@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:50:57 +0800] "GET /mvc_53_ssm_annotation HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:50:58 +0800] "GET /mvc_53_ssm_annotation/ HTTP/1.1" 200 420 http-bio-9091-exec-3 742
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:51:05 +0800] "POST /mvc_53_ssm_annotation/zxin/register.do HTTP/1.1" 200 203 http-bio-9091-exec-4 387

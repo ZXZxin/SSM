@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:19:50 +0800] "GET /mvc_06_pathProblem HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:19:51 +0800] "GET /mvc_06_pathProblem/ HTTP/1.1" 200 270 http-bio-9091-exec-3 1035
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:19:53 +0800] "GET /mvc_06_pathProblem/test/my.do HTTP/1.1" 200 270 http-bio-9091-exec-4 60
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:19:53 +0800] "GET /mvc_06_pathProblem/test/my.do HTTP/1.1" 200 270 http-bio-9091-exec-5 4
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:19:54 +0800] "GET /mvc_06_pathProblem/test/my.do HTTP/1.1" 200 270 http-bio-9091-exec-6 13

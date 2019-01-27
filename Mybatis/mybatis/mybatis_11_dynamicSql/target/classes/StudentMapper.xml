@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zxin.dao.IStudentDao">
+
+
+    <select id="selectStudentsByIf" resultType="Student">
+        select id,name,age,score
+        from mybatis_05_student
+        where 1 = 1  <!--效率不高-->
+        <if test="name != null and name != ''">
+            and name like '%' #{name} '%'
+        </if>
+        <if test="age > 0">
+            and age > #{age}
+        </if>
+    </select>
+
+    <select id="selectStudentsByWhere" resultType="Student">
+        select id,name,age,score
+        from mybatis_05_student
+        <where>
+            <if test="name != null and name != ''">
+                and name like '%' #{name} '%'
+            </if>
+            <if test="age > 0">
+                and age > #{age}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectStudentsByChoose" resultType="Student">
+        select id,name,age,score
+        from mybatis_05_student
+        <where>
+            <choose>
+                <when test="name != null and name !=''">
+                    and name like '%' #{name} '%'
+                </when>
+                <when test="age > 0">
+                    and age > #{age}
+                </when>
+                <otherwise>
+                    1 = 2
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <select id="selectStudentsByForeach" resultType="Student">
+        <!-- select id,name,age,score from student where id in (1,3,5) -->
+        select id,name,age,score
+        from mybatis_05_student
+        <if test="array.length > 0"> <!--array是mybatis的别名-->
+            where id in
+            <foreach collection="array" item="myid" open="(" close=")" separator=",">
+                #{myid}
+            </foreach>
+        </if>
+    </select>
+
+    <select id="selectStudentsByForeach2" resultType="Student">
+        <!-- select id,name,age,score from student where id in (1,3,5) -->
+        select id,name,age,score
+        from mybatis_05_student
+        <if test="list.size > 0">
+            where id in
+            <foreach collection="list" item="myid" open="(" close=")" separator=",">
+                #{myid}
+            </foreach>
+        </if>
+    </select>
+
+    <select id="selectStudentsByForeach3" resultType="Student">
+        <!-- select id,name,age,score from student where id in (1,3,5) -->
+        select id,name,age,score
+        from mybatis_05_student
+        <if test="list.size > 0">
+            where id in
+            <foreach collection="list" item="stu" open="(" close=")" separator=",">
+                #{stu.id}
+            </foreach>
+        </if>
+    </select>
+
+    <select id="selectStudentsBySqlFragment" resultType="Student">
+        <!-- select id,name,age,score from student where id in (1,3,5) -->
+        select <include refid="selectColumns"/>
+        from mybatis_05_student
+        <if test="list.size > 0">
+            where id in
+            <foreach collection="list" item="stu" open="(" close=")" separator=",">
+                #{stu.id}
+            </foreach>
+        </if>
+    </select>
+
+    <sql id="selectColumns">
+        id,name,age,score
+    </sql>
+
+
+</mapper>

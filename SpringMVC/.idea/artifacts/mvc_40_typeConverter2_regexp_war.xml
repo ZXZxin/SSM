@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_40_typeConverter2_regexp:war">
+    <output-path>$PROJECT_DIR$/mvc_40_typeConverter2_regexp/target</output-path>
+    <root id="archive" name="mvc_40_typeConverter2_regexp.war">
+      <element id="artifact" artifact-name="mvc_40_typeConverter2_regexp:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:17:53:03 +0800] "GET /mvc_41_typeConverter3_wrongFormatToReturnPage HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:17:53:04 +0800] "GET /mvc_41_typeConverter3_wrongFormatToReturnPage/ HTTP/1.1" 200 448 http-bio-9091-exec-3 1147
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:17:53:11 +0800] "POST /mvc_41_typeConverter3_wrongFormatToReturnPage/zxin/register.do HTTP/1.1" 200 448 http-bio-9091-exec-4 73
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:17:53:14 +0800] "POST /mvc_41_typeConverter3_wrongFormatToReturnPage/zxin/register.do HTTP/1.1" 200 448 http-bio-9091-exec-6 4

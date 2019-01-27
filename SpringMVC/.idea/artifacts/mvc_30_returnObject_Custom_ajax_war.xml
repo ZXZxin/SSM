@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_30_returnObject_Custom_ajax:war">
+    <output-path>$PROJECT_DIR$/mvc_30_returnObject_Custom_ajax/target</output-path>
+    <root id="archive" name="mvc_30_returnObject_Custom_ajax.war">
+      <element id="artifact" artifact-name="mvc_30_returnObject_Custom_ajax:war exploded" />
+    </root>
+  </artifact>
+</component>

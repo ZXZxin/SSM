@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/mvc_01_primary" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_02_primary" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_03_urlpattern" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_04_pathProblem" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_05_pathProblem" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_06_pathProblem" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_07_pathProblem" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_08_simpleUrlHandlerMapping" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_09_httpRequestHandlerAdapter" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_10_abstractController" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_11_multiActionController" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_12_multiActionController" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_13_multiActionController" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_14_beanNameViewResolver" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_15_xmlViewResolver" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_16_ResourcesBundleViewResolver" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_17_viewResolverOrder" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_18_primary_annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_19_receiveParameters_Property" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_20_receiveParameters_requestParam" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_21_receiveParameters_Object" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_22_receiveParameters_ObjectProperty" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_23_receiveParameters_pathVariable" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_24_returnString_internal" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_25_returnString_internal_2" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_25_returString_internal_2" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_26_returnString_external" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_27_returnVoid_ajax" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_28_returnObject_Number_ajax" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_29_returnObject_String_ajax" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_30_returnObject_Custom_ajax" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_31_returnObject_Map_ajax" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_32_returnObject_List_ajax" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_33_dispatcher_page_modelAndView" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_34_redirect_page_modelAndView" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_35_redirect_controller_string" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_36_simpleMappingExceptionResolver" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_37_customExceptionResolver" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_38_annotation_exceptionResolver" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_39_typeConverter1" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_40_typeConverter2_regexp" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_41_typeConverter3_wrongFormatToReturnPage" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_42_typeConverter4_dataReDisplay" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_43_initDataBinder" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_44_initDataBinder2" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_45_dataValidation" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_46_fileUpload_single" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_47_fileUpload_multi" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_48_interceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_49_interceptor2" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_50_permissionInterceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_51_ssm_xml" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_52_ssm_xml_2" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_53_ssm_annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_54_ssm_annotation_2" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc_55_ssm_annotation_3" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

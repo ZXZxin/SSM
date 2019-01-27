@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_42_typeConverter4_dataReDisplay:war">
+    <output-path>$PROJECT_DIR$/mvc_42_typeConverter4_dataReDisplay/target</output-path>
+    <root id="archive" name="mvc_42_typeConverter4_dataReDisplay.war">
+      <element id="artifact" artifact-name="mvc_42_typeConverter4_dataReDisplay:war exploded" />
+    </root>
+  </artifact>
+</component>

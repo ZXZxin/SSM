@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [25/Jan/2019:18:50:23 +0800] "GET /mvc_50_permissionInterceptor HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [25/Jan/2019:18:50:23 +0800] "GET /mvc_50_permissionInterceptor/ HTTP/1.1" 200 645 http-bio-9091-exec-3 588
+0:0:0:0:0:0:0:1 - - [25/Jan/2019:18:50:50 +0800] "GET /mvc_50_permissionInterceptor/zxin/some.do HTTP/1.1" 200 629 http-bio-9091-exec-4 84
+0:0:0:0:0:0:0:1 - - [25/Jan/2019:18:52:53 +0800] "GET /mvc_50_permissionInterceptor/login.jsp HTTP/1.1" 200 189 http-bio-9091-exec-7 68
+0:0:0:0:0:0:0:1 - - [25/Jan/2019:18:54:09 +0800] "GET /mvc_50_permissionInterceptor/zxin/some.do HTTP/1.1" 200 182 http-bio-9091-exec-10 95
+0:0:0:0:0:0:0:1 - - [25/Jan/2019:18:54:16 +0800] "GET /mvc_50_permissionInterceptor/logout.jsp HTTP/1.1" 200 189 http-bio-9091-exec-10 70
+0:0:0:0:0:0:0:1 - - [25/Jan/2019:18:54:20 +0800] "GET /mvc_50_permissionInterceptor/zxin/some.do HTTP/1.1" 200 629 http-bio-9091-exec-10 12
+0:0:0:0:0:0:0:1 - - [25/Jan/2019:18:58:41 +0800] "GET /mvc_50_permissionInterceptor/zxin/system.do HTTP/1.1" 200 629 http-bio-9091-exec-1 121
+0:0:0:0:0:0:0:1 - - [25/Jan/2019:18:58:48 +0800] "GET /mvc_50_permissionInterceptor/zxin/login.jsp HTTP/1.1" 404 1037 http-bio-9091-exec-3 5
+0:0:0:0:0:0:0:1 - - [25/Jan/2019:18:58:53 +0800] "GET /mvc_50_permissionInterceptor/login.jsp HTTP/1.1" 200 189 http-bio-9091-exec-5 10
+0:0:0:0:0:0:0:1 - - [25/Jan/2019:18:58:55 +0800] "GET /mvc_50_permissionInterceptor/zxin/system.do HTTP/1.1" 200 182 http-bio-9091-exec-6 27

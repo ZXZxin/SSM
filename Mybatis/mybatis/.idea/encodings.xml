@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_01_primary" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_02_primary_utilclass" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_03_primary_thefourelements_properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_04_primary_typeAliases" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_05_curd" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_06_propertycolumnunsame" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_07_propertycolumnunsame2_resultMap" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_08_mapperDynamicProxy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_09_selectByCondition" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_10_selectByCondition2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_11_dynamicSql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_12_one2many" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_13_one2many2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_14_many2one" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_15_many2one2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_16_oneself_one2many" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_17_oneself_one2many2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_18_oneself_many2one" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_19_many2many" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_20_one2many2_lazyLoad" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_21_oneLevelSqlSessionCache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_22_secondLevelCache_bulidin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_23_annotation" charset="UTF-8" />
+  </component>
+</project>

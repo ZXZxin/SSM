@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx 
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- 注册视图解析器1 -->
+	<bean class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+		<property name="basename" value="myViews"/>
+		<property name="order" value="3"/>
+	</bean>
+	
+	<!-- 注册视图解析器2 -->
+	<bean class="org.springframework.web.servlet.view.XmlViewResolver">
+		<property name="location" value="classpath:myViews.xml"/>
+		<property name="order" value="1"/>
+	</bean>
+	
+	<!-- 注册视图解析器3 : 如果有多个视图解析器，最后加上一个默认的(相当于你自己定义了，就没有默认的了) -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
+
+	<!-- 注册处理器 -->
+	<bean id="/my.do" class="handlers.MyController"/>
+	
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

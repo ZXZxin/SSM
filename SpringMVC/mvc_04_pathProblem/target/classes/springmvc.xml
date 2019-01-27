@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx 
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- 注册处理器 -->
+	<!-- 
+		这是个后台路径：出现在Java代码中，或xml文件，或properties等配置文件中的，以斜杠/开头的路径为后台路径
+		后台路径的参照路径是：当前web应用的根，就本例而言，web应用的根是  http://127.0.0.1:8080/06-requestPath
+		绝对路径 = 参照路径 + 相对路径
+		那么，这里对于处理器的注册，意思是，若要想访问MyController这个处理器，必须提交一个请求，这个请求，以后台路径的方式给出
+		这个/my.do后台路径，转变为绝对路径是：     http://127.0.0.1:8080/06-requestPath/my.do
+		也就是说，用户若要访问MyContrller这个处理器，必须提交的请求为：    http://127.0.0.1:8080/06-requestPath/my.do
+	 -->
+	<bean id="/my.do" class="handlers.MyController"/>
+	
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

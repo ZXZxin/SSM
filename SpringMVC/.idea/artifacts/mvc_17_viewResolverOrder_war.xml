@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_17_viewResolverOrder:war">
+    <output-path>$PROJECT_DIR$/mvc_17_viewResolverOrder/target</output-path>
+    <root id="archive" name="mvc_17_viewResolverOrder.war">
+      <element id="artifact" artifact-name="mvc_17_viewResolverOrder:war exploded" />
+    </root>
+  </artifact>
+</component>

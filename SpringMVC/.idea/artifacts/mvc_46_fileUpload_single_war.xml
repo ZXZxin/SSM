@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_46_fileUpload_single:war">
+    <output-path>$PROJECT_DIR$/mvc_46_fileUpload_single/target</output-path>
+    <root id="archive" name="mvc_46_fileUpload_single.war">
+      <element id="artifact" artifact-name="mvc_46_fileUpload_single:war exploded" />
+    </root>
+  </artifact>
+</component>

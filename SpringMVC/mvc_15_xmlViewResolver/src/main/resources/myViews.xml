@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx 
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- 定义一个内部资源视图 -->
+	<bean id="internalResource" class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/jsp/welcome.jsp"/>
+	</bean>
+	<!-- 定义一个外部资源视图 -->
+	<bean id="taobao" class="org.springframework.web.servlet.view.RedirectView">
+		<property name="url" value="http://www.taobao.com"/>
+	</bean>
+	<!-- 定义一个外部资源视图 -->
+	<bean id="jd" class="org.springframework.web.servlet.view.RedirectView">
+		<property name="url" value="http://www.jd.com"/>
+	</bean>
+	
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

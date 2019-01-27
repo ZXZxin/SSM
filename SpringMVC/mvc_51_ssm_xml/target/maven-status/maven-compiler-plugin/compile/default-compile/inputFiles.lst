@@ -1,0 +1,5 @@
+/home/zxzxin/IDEA/SSM/SpringMVC/mvc_51_ssm_xml/src/main/java/com/zxin/beans/Student.java
+/home/zxzxin/IDEA/SSM/SpringMVC/mvc_51_ssm_xml/src/main/java/com/zxin/dao/IStudentDao.java
+/home/zxzxin/IDEA/SSM/SpringMVC/mvc_51_ssm_xml/src/main/java/com/zxin/handlers/StudentController.java
+/home/zxzxin/IDEA/SSM/SpringMVC/mvc_51_ssm_xml/src/main/java/com/zxin/services/StudentServiceImpl.java
+/home/zxzxin/IDEA/SSM/SpringMVC/mvc_51_ssm_xml/src/main/java/com/zxin/services/IStudentService.java

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_12_multiActionController:war">
+    <output-path>$PROJECT_DIR$/mvc_12_multiActionController/target</output-path>
+    <root id="archive" name="mvc_12_multiActionController.war">
+      <element id="artifact" artifact-name="mvc_12_multiActionController:war exploded" />
+    </root>
+  </artifact>
+</component>

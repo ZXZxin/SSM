@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_45_dataValidation:war">
+    <output-path>$PROJECT_DIR$/mvc_45_dataValidation/target</output-path>
+    <root id="archive" name="mvc_45_dataValidation.war">
+      <element id="artifact" artifact-name="mvc_45_dataValidation:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:16:51:24 +0800] "GET /mvc_38_annotation_exceptionResolver HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:16:51:26 +0800] "GET /mvc_38_annotation_exceptionResolver/ HTTP/1.1" 200 434 http-bio-9091-exec-3 1307
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:16:51:40 +0800] "POST /mvc_38_annotation_exceptionResolver/zxin/register.do HTTP/1.1" 200 207 http-bio-9091-exec-4 133
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:16:51:42 +0800] "GET /mvc_38_annotation_exceptionResolver/ HTTP/1.1" 200 434 http-bio-9091-exec-6 1
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:16:51:47 +0800] "POST /mvc_38_annotation_exceptionResolver/zxin/register.do HTTP/1.1" 200 243 http-bio-9091-exec-7 78

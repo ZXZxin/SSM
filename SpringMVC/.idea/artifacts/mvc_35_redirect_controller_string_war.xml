@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_35_redirect_controller_string:war">
+    <output-path>$PROJECT_DIR$/mvc_35_redirect_controller_string/target</output-path>
+    <root id="archive" name="mvc_35_redirect_controller_string.war">
+      <element id="artifact" artifact-name="mvc_35_redirect_controller_string:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_31_returnObject_Map_ajax:war">
+    <output-path>$PROJECT_DIR$/mvc_31_returnObject_Map_ajax/target</output-path>
+    <root id="archive" name="mvc_31_returnObject_Map_ajax.war">
+      <element id="artifact" artifact-name="mvc_31_returnObject_Map_ajax:war exploded" />
+    </root>
+  </artifact>
+</component>

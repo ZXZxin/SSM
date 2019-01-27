@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="test">
+
+    <insert id="insertStudent">
+        insert into mybatis_06_student(tname,tage,score) values(#{name}, #{age}, #{score})
+    </insert>
+
+    <!--第一种方式,使用别名 -->
+    <select id="selectAllStudents" resultType="Student"> <!--对于字段实体和表不同的问题使用别名的方式解决-->
+        select tid id,tname name,tage age,score from mybatis_06_student
+    </select>
+
+    <select id="selectStudentById" resultType="Student">
+        select tid id,tname name,tage age,score from mybatis_06_student where tid=#{jjj}
+     </select>
+
+</mapper>

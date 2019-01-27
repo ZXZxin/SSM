@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="test">
+
+    <insert id="insertStudent">
+        insert into mybatis_06_student(tname,tage,score) values(#{name}, #{age}, #{score})
+    </insert>
+    
+    <resultMap id="studentMap" type="Student">
+        <id column="tid" property="id"></id> <!--column 是数据库表中的，而property是bean的-->
+        <result column="tname" property="name"></result>
+        <result column="tage" property="age"></result>
+    </resultMap>
+
+    <!--第一种方式,使用resultMap    -->
+    <select id="selectAllStudents" resultMap="studentMap"> <!--第二种解决不同的问题-->
+        select tid,tname,tage,score from mybatis_06_student
+    </select>
+
+    <select id="selectStudentById" resultMap="studentMap">
+        select tid,tname,tage,score from mybatis_06_student where tid=#{jjj}
+     </select>
+
+</mapper>

@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:26:24 +0800] "GET /mvc_52_ssm_xml_2 HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:26:26 +0800] "GET /mvc_52_ssm_xml_2/ HTTP/1.1" 200 415 http-bio-9091-exec-3 1674
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:26:39 +0800] "POST /mvc_52_ssm_xml_2/zxin/register.do HTTP/1.1" 500 3979 http-bio-9091-exec-4 48
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:27:32 +0800] "GET /mvc_52_ssm_xml_2 HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:27:33 +0800] "GET /mvc_52_ssm_xml_2/ HTTP/1.1" 200 415 http-bio-9091-exec-3 164
+0:0:0:0:0:0:0:1 - - [26/Jan/2019:17:27:51 +0800] "POST /mvc_52_ssm_xml_2/zxin/register.do HTTP/1.1" 200 203 http-bio-9091-exec-4 941

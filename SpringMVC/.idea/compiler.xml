@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mvc_01_primary" />
+        <module name="mvc_02_primary" />
+        <module name="mvc_03_urlpattern" />
+        <module name="mvc_04_pathProblem" />
+        <module name="mvc_05_pathProblem" />
+        <module name="mvc_06_pathProblem" />
+        <module name="mvc_07_pathProblem" />
+        <module name="mvc_08_simpleUrlHandlerMapping" />
+        <module name="mvc_09_httpRequestHandlerAdapter" />
+        <module name="mvc_10_abstractController" />
+        <module name="mvc_11_multiActionController" />
+        <module name="mvc_12_multiActionController" />
+        <module name="mvc_13_multiActionController" />
+        <module name="mvc_14_beanNameViewResolver" />
+        <module name="mvc_15_xmlViewResolver" />
+        <module name="mvc_16_ResourcesBundleViewResolver" />
+        <module name="mvc_17_viewResolverOrder" />
+        <module name="mvc_18_primary_annotation" />
+        <module name="mvc_19_receiveParameters_Property" />
+        <module name="mvc_20_receiveParameters_requestParam" />
+        <module name="mvc_21_receiveParameters_Object" />
+        <module name="mvc_22_receiveParameters_ObjectProperty" />
+        <module name="mvc_23_receiveParameters_pathVariable" />
+        <module name="mvc_24_returnString_internal" />
+        <module name="mvc_25_returnString_internal_2" />
+        <module name="mvc_26_returnString_external" />
+        <module name="mvc_27_returnVoid_ajax" />
+        <module name="mvc_28_returnObject_Number_ajax" />
+        <module name="mvc_29_returnObject_String_ajax" />
+        <module name="mvc_30_returnObject_Custom_ajax" />
+        <module name="mvc_31_returnObject_Map_ajax" />
+        <module name="mvc_32_returnObject_List_ajax" />
+        <module name="mvc_33_dispatcher_page_modelAndView" />
+        <module name="mvc_34_redirect_page_modelAndView" />
+        <module name="mvc_35_redirect_controller_string" />
+        <module name="mvc_36_simpleMappingExceptionResolver" />
+        <module name="mvc_37_customExceptionResolver" />
+        <module name="mvc_38_annotation_exceptionResolver" />
+        <module name="mvc_39_typeConverter1" />
+        <module name="mvc_40_typeConverter2_regexp" />
+        <module name="mvc_41_typeConverter3_wrongFormatToReturnPage" />
+        <module name="mvc_42_typeConverter4_dataReDisplay" />
+        <module name="mvc_43_initDataBinder" />
+        <module name="mvc_44_initDataBinder2" />
+        <module name="mvc_45_dataValidation" />
+        <module name="mvc_46_fileUpload_single" />
+        <module name="mvc_47_fileUpload_multi" />
+        <module name="mvc_48_interceptor" />
+        <module name="mvc_49_interceptor2" />
+        <module name="mvc_50_permissionInterceptor" />
+        <module name="mvc_51_ssm_xml" />
+        <module name="mvc_52_ssm_xml_2" />
+        <module name="mvc_53_ssm_annotation" />
+        <module name="mvc_54_ssm_annotation_2" />
+        <module name="mvc_55_ssm_annotation_3" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="_______________________________________________" target="1.7" />
+      <module name="mvc_01_primary" target="1.7" />
+      <module name="mvc_02_primary" target="1.7" />
+      <module name="mvc_03_urlpattern" target="1.7" />
+      <module name="mvc_04_pathProblem" target="1.7" />
+      <module name="mvc_05_pathProblem" target="1.7" />
+      <module name="mvc_06_pathProblem" target="1.7" />
+      <module name="mvc_07_pathProblem" target="1.7" />
+      <module name="mvc_08_simpleUrlHandlerMapping" target="1.7" />
+      <module name="mvc_09_httpRequestHandlerAdapter" target="1.7" />
+      <module name="mvc_10_abstractController" target="1.7" />
+      <module name="mvc_11_multiActionController" target="1.7" />
+      <module name="mvc_12_multiActionController" target="1.7" />
+      <module name="mvc_13_multiActionController" target="1.7" />
+      <module name="mvc_14_beanNameViewResolver" target="1.7" />
+      <module name="mvc_15_xmlViewResolver" target="1.7" />
+      <module name="mvc_16_ResourcesBundleViewResolver" target="1.7" />
+      <module name="mvc_17_viewResolverOrder" target="1.7" />
+      <module name="mvc_18_primary_annotation" target="1.7" />
+      <module name="mvc_19_receiveParameters_Property" target="1.7" />
+      <module name="mvc_20_receiveParameters_requestParam" target="1.7" />
+      <module name="mvc_21_receiveParameters_Object" target="1.7" />
+      <module name="mvc_22_receiveParameters_ObjectProperty" target="1.7" />
+      <module name="mvc_23_receiveParameters_pathVariable" target="1.7" />
+      <module name="mvc_23_receiveParameters_pathVarible" target="1.7" />
+      <module name="mvc_24_returnString_internal" target="1.7" />
+      <module name="mvc_25_returnString_internal_2" target="1.7" />
+      <module name="mvc_25_returString_internal_2" target="1.7" />
+      <module name="mvc_26_returnString_external" target="1.7" />
+      <module name="mvc_27_returnVoid_ajax" target="1.7" />
+      <module name="mvc_28_returnObject_Number_ajax" target="1.7" />
+      <module name="mvc_29_returnObject_String_ajax" target="1.7" />
+      <module name="mvc_30_returnObject_Custom_ajax" target="1.7" />
+      <module name="mvc_31_returnObject_Map_ajax" target="1.7" />
+      <module name="mvc_32_returnObject_List_ajax" target="1.7" />
+      <module name="mvc_33_dispatcher_page_modelAndView" target="1.7" />
+      <module name="mvc_34_redirect_page_modelAndView" target="1.7" />
+      <module name="mvc_35_redirect_controller_string" target="1.7" />
+      <module name="mvc_36_simpleMappingExceptionResolver" target="1.7" />
+      <module name="mvc_37_customExceptionResolver" target="1.7" />
+      <module name="mvc_38_annotation_exceptionHandler" target="1.7" />
+      <module name="mvc_38_annotation_exceptionResolver" target="1.7" />
+      <module name="mvc_39_typeConverter1" target="1.7" />
+      <module name="mvc_40_typeConverter2_regexp" target="1.7" />
+      <module name="mvc_41_typeConverter3_wrongFormatToReturnPage" target="1.7" />
+      <module name="mvc_42_typeConverter4_dataReDisplay" target="1.7" />
+      <module name="mvc_43_initDataBinder" target="1.7" />
+      <module name="mvc_44_initDataBinder2" target="1.7" />
+      <module name="mvc_45_dataValidation" target="1.7" />
+      <module name="mvc_46_fileUpload_single" target="1.7" />
+      <module name="mvc_47_fileUpload_multi" target="1.7" />
+      <module name="mvc_48_interceptor" target="1.7" />
+      <module name="mvc_49_interceptor2" target="1.7" />
+      <module name="mvc_50_permissionInterceptor" target="1.7" />
+      <module name="mvc_51_ssm_xml" target="1.7" />
+      <module name="mvc_52_ssm_xml_2" target="1.7" />
+      <module name="mvc_53_ssm_annotation" target="1.7" />
+      <module name="mvc_54_ssm_annotation_2" target="1.7" />
+      <module name="mvc_55_ssm_annotation_3" target="1.7" />
+      <module name="SpringMVC" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

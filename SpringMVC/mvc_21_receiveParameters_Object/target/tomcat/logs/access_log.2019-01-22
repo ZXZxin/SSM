@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:18:38:48 +0800] "GET /mvc_21_receiveParameters_Object HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:18:38:48 +0800] "GET /mvc_21_receiveParameters_Object HTTP/1.1" 302 - http-bio-9091-exec-2 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:18:38:49 +0800] "GET /mvc_21_receiveParameters_Object/ HTTP/1.1" 200 509 http-bio-9091-exec-3 902
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:18:38:49 +0800] "GET /mvc_21_receiveParameters_Object/ HTTP/1.1" 200 509 http-bio-9091-exec-4 6

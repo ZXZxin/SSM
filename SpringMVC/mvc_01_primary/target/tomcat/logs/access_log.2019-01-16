@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:15:58:15 +0800] "GET / HTTP/1.1" 200 52 http-bio-9091-exec-1 1286
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:15:58:15 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9091-exec-3 2
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:15:59:03 +0800] "GET /mvc_01_primary/my.do HTTP/1.1" 500 7792 http-bio-9091-exec-1 436
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:15:59:34 +0800] "GET /mvc_01_primary/my.do HTTP/1.1" 200 155 http-bio-9091-exec-1 1360
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:16:03:38 +0800] "GET /mvc_01_primary/my.do HTTP/1.1" 200 183 http-bio-9091-exec-1 1104
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:16:25:50 +0800] "GET /mvc_01_primary/my.do HTTP/1.1" 200 183 http-bio-9091-exec-1 1167

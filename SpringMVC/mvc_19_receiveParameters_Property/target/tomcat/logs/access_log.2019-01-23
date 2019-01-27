@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:18:09 +0800] "GET /mvc_19_receiveParameters_Property HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:18:10 +0800] "GET /mvc_19_receiveParameters_Property/ HTTP/1.1" 200 434 http-bio-9091-exec-3 1176
+0:0:0:0:0:0:0:1 - - [23/Jan/2019:13:18:15 +0800] "POST /mvc_19_receiveParameters_Property/zxin/register.do HTTP/1.1" 200 206 http-bio-9091-exec-4 71

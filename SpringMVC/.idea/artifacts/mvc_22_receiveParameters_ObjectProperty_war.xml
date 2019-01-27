@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_22_receiveParameters_ObjectProperty:war">
+    <output-path>$PROJECT_DIR$/mvc_22_receiveParameters_ObjectProperty/target</output-path>
+    <root id="archive" name="mvc_22_receiveParameters_ObjectProperty.war">
+      <element id="artifact" artifact-name="mvc_22_receiveParameters_ObjectProperty:war exploded" />
+    </root>
+  </artifact>
+</component>

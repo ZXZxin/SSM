@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_51_ssm_xml:war">
+    <output-path>$PROJECT_DIR$/mvc_51_ssm_xml/target</output-path>
+    <root id="archive" name="mvc_51_ssm_xml.war">
+      <element id="artifact" artifact-name="mvc_51_ssm_xml:war exploded" />
+    </root>
+  </artifact>
+</component>

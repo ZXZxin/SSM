@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--这个就是那个四要素的配置文件的名字-->
+    <properties resource="jdbc_mysql.properties"></properties>
+
+    <!--和上一个不同的地方，配置一个别名，在mapper.xml中就可以在parameterType中使用这个别名-->
+    <typeAliases>
+        <!--下面这个也要配置很多个-->
+        <!--<typeAlias type="com.zxin.bean.Student" alias="Student"></typeAlias>-->
+        <!--这个更加方便，可以扫描整个包的别名, 系统就自动将这个类的简单类名当成是别名了-->
+        <package name="com.zxin.bean"></package>
+    </typeAliases>
+    
+    <!--配置运行环境-->
+    <environments default="mysqlEM"> <!--environment可以有多个，这个默认使用下面的那个-->
+
+        <environment id="mysqlEM">
+            <transactionManager type="JDBC"/> <!--使用JDBC默认的事务管理器-->
+            <dataSource type="POOLED"> <!--数据库连接池-->
+                <!--这个就是和上一个项目不同的地方，使用了配置文件-->
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.user}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+    <!--注册映射文件-->
+    <mappers>
+        <!--<package name="com.zxin.dao"></package>-->
+        <!--<mapper resource="StudentMapper.xml"/>-->
+    </mappers>
+</configuration>

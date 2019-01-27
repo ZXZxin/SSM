@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--一般对一张表的操作就有一个mapper.xml文件-->
+<mapper namespace="test">  <!--这个命名空间的作用就是在sqlSession.insert的调用的时候可以在前面加上test.insertStudent-->
+
+    <!--parameterType属性也可以省略-->
+    <insert id="insertStudent" parameterType="Student"><!--这里就是使用了别名-->
+        insert into mybatis_01_student(name, age, score) values(#{name}, #{age}, #{score}) <!--底层使用反射组装，必须和bean一样-->
+    </insert>
+</mapper>

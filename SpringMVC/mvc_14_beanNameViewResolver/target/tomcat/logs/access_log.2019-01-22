@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:45:58 +0800] "GET /mvc_14_beanNameViewResolver HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:45:58 +0800] "GET /mvc_14_beanNameViewResolver/ HTTP/1.1" 200 644 http-bio-9091-exec-3 535
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:46:03 +0800] "GET /mvc_14_beanNameViewResolver/my.do HTTP/1.1" 500 5056 http-bio-9091-exec-4 54
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:48:27 +0800] "GET /mvc_14_beanNameViewResolver HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:48:27 +0800] "GET /mvc_14_beanNameViewResolver/ HTTP/1.1" 200 644 http-bio-9091-exec-3 55
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:48:31 +0800] "GET /mvc_14_beanNameViewResolver/my.do HTTP/1.1" 302 - http-bio-9091-exec-4 36
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:50:13 +0800] "GET /mvc_14_beanNameViewResolver HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:50:13 +0800] "GET /mvc_14_beanNameViewResolver/ HTTP/1.1" 200 644 http-bio-9091-exec-3 84
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:50:19 +0800] "GET /mvc_14_beanNameViewResolver/my.do HTTP/1.1" 500 5056 http-bio-9091-exec-4 52
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:51:19 +0800] "GET /mvc_14_beanNameViewResolver HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:51:19 +0800] "GET /mvc_14_beanNameViewResolver/ HTTP/1.1" 200 644 http-bio-9091-exec-3 102
+0:0:0:0:0:0:0:1 - - [22/Jan/2019:15:51:23 +0800] "GET /mvc_14_beanNameViewResolver/my.do HTTP/1.1" 200 181 http-bio-9091-exec-4 806

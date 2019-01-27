@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.zxin.dao.IStudentDao">
+
+
+
+    <resultMap id="studentMapper" type="Student">
+
+        <id column="sid" property="sid"/>
+        <result column="sname" property="sname"/>
+
+        <collection property="courses" ofType="Course">
+            <id column="cid" property="cid"/>
+            <result column="cname" property="cname"/>
+        </collection>
+
+    </resultMap>
+
+    <select id="selectStudentById" resultMap="studentMapper">
+        select sid, sname, cid, cname
+        from mybatis_19_student, mybatis_19_middle, mybatis_19_course
+        where sid = studentId and cid = courseId
+              and sid = #{xxx}
+    </select>
+
+</mapper>

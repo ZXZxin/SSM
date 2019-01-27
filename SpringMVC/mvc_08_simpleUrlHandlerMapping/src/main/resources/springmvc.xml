@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx 
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+	<!-- 注册HandlerMapping -->
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="urlMap">
+			<map>
+				<entry key="/my.do" value="myController"/>
+				<entry key="/hello.do" value="myController"/>
+			</map>
+		</property>
+		<!--下面的配置和上面的一样-->
+		<!-- <property name="mappings">
+			<props>
+				<prop key="/my.do">myController</prop>
+				<prop key="/hello.do">myController</prop>
+			</props>
+		</property> -->
+	</bean>
+
+	<!-- 注册处理器 -->
+	<bean id="myController" class="handlers.MyController"/>
+	
+</beans>

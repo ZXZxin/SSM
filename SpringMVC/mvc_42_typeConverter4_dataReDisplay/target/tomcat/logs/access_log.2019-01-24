@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:18:51:51 +0800] "GET /mvc_42_typeConverter4_dataReDisplay HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:18:51:52 +0800] "GET /mvc_42_typeConverter4_dataReDisplay/ HTTP/1.1" 200 503 http-bio-9091-exec-3 950
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:18:52:00 +0800] "POST /mvc_42_typeConverter4_dataReDisplay/zxin/register.do HTTP/1.1" 200 946 http-bio-9091-exec-4 97
+0:0:0:0:0:0:0:1 - - [24/Jan/2019:18:52:09 +0800] "POST /mvc_42_typeConverter4_dataReDisplay/zxin/register.do HTTP/1.1" 200 685 http-bio-9091-exec-5 4

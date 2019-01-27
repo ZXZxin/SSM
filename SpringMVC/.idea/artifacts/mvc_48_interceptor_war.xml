@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc_48_interceptor:war">
+    <output-path>$PROJECT_DIR$/mvc_48_interceptor/target</output-path>
+    <root id="archive" name="mvc_48_interceptor.war">
+      <element id="artifact" artifact-name="mvc_48_interceptor:war exploded" />
+    </root>
+  </artifact>
+</component>

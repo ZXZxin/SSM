@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 为实体类(bean)指定别名 -->
+	<typeAliases>
+		<package name="com.zxin.beans"/>
+	</typeAliases>
+
+
+	<!-- 注册映射文件(因为使用了MapperScannerConfigurer) -->
+	<mappers>
+		<package name="com.zxin.dao"/>
+	</mappers>
+
+</configuration>
