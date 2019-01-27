@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_01_primary" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_02_beanAssemble" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_03_di" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_04_di_annotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_05_aopLeadin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_06_aop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_07_aspectj" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_08_jdbcTemplate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_09_buyStock" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_10_buyStock_txProxyFactoryBean" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_11_buyStock_txAnnotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_12_buyStock_txAspectj" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_13_spring_mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_14_spring_mybatis_2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_15_spring_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_16_spring_web_2" charset="UTF-8" />
+  </component>
+</project>

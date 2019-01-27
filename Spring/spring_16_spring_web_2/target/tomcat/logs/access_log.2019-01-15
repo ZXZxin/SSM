@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [15/Jan/2019:17:45:03 +0800] "GET /spring_web2 HTTP/1.1" 404 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [15/Jan/2019:18:00:25 +0800] "GET /spring_web2 HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [15/Jan/2019:18:00:26 +0800] "GET /spring_web2/ HTTP/1.1" 200 394 http-bio-9091-exec-3 1155
+0:0:0:0:0:0:0:1 - - [15/Jan/2019:18:02:58 +0800] "GET /spring_web2 HTTP/1.1" 302 - http-bio-9091-exec-5 0
+0:0:0:0:0:0:0:1 - - [15/Jan/2019:18:02:58 +0800] "GET /spring_web2/ HTTP/1.1" 200 394 http-bio-9091-exec-7 2
+0:0:0:0:0:0:0:1 - - [15/Jan/2019:18:03:11 +0800] "POST /spring_web2/registerServlet HTTP/1.1" 200 201 http-bio-9091-exec-8 438
+0:0:0:0:0:0:0:1 - - [15/Jan/2019:18:03:15 +0800] "POST /spring_web2/registerServlet HTTP/1.1" 200 201 http-bio-9091-exec-10 18
+0:0:0:0:0:0:0:1 - - [15/Jan/2019:18:03:17 +0800] "POST /spring_web2/registerServlet HTTP/1.1" 200 201 http-bio-9091-exec-1 13
+0:0:0:0:0:0:0:1 - - [15/Jan/2019:18:10:46 +0800] "GET /spring_web2 HTTP/1.1" 302 - http-bio-9091-exec-1 0
+0:0:0:0:0:0:0:1 - - [15/Jan/2019:18:10:46 +0800] "GET /spring_web2/ HTTP/1.1" 200 394 http-bio-9091-exec-3 54
+0:0:0:0:0:0:0:1 - - [15/Jan/2019:18:11:12 +0800] "POST /spring_web2/registerServlet HTTP/1.1" 200 201 http-bio-9091-exec-4 514

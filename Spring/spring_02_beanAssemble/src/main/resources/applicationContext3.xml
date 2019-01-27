@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册Service：静态工厂Bean -->
+    <!--这里因为多了一个 factory-method，所以不会创建ServiceFactory的对象，而是从静态工厂的方法获取对象-->
+    <bean id="myService" class="com.zxin.ba3.ServiceFactory" factory-method="getSomeService"/>
+
+</beans>

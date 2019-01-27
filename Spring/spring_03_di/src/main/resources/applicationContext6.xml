@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册School -->
+    <bean id="mySchool" class="com.zxin.di05.School">
+    	<property name="name" value="清华大学"/>
+    </bean>
+    <bean id="mySchool2" class="com.zxin.di05.School">
+    	<property name="name" value="北京大学"/>
+    </bean>
+
+    
+    <!-- 注册Student -->
+    <bean id="myCollection" class="com.zxin.di05.MyCollection">
+    	<property name="schools">
+    		<array>
+    			<ref bean="mySchool"/>
+    			<ref bean="mySchool2"/>
+    		</array>
+    	</property>
+    	
+    	<property name="myStrs" value="中国,长沙"/>
+
+    	<property name="myList" value="宁乡,玉潭"/>
+
+    	<property name="mySet" value="性别,姓名"/>
+
+
+    	<property name="myMap">
+    		<map>
+    			<entry key="mobile" value="1234567"/>
+    			<entry key="QQ" value="7654321"/>
+    		</map>
+    	</property>
+    	
+    	<property name="myPros">
+    		<props>
+    			<prop key="password">123456</prop>
+    			<prop key="email">987654321</prop>
+    		</props>
+    	</property>
+    </bean>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

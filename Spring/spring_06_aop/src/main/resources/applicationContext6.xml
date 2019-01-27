@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="com.zxin.aop06.SomeServiceImpl"/>
+    
+    <!-- 注册切面：通知 -->
+    <bean id="myBeforeAdvice" class="com.zxin.aop06.MyMethodBeforeAdvice"/>
+    <bean id="myAfterAdvice" class="com.zxin.aop06.MyAfterReturningAdvice"/>
+    
+    <!-- 生成多个代理对象 : 前置和后置 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+    	<property name="interceptorNames" value="myBeforeAdvice,myAfterAdvice"/> <!--比下面的方法更加简单的写法-->
+    	<!-- <property name="interceptorNames">
+    		<array>
+    			<value>myBeforeAdvice</value>
+    			<value>myAfterAdvice</value>
+    		</array>
+    	</property> -->
+    </bean>
+
+</beans>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="com.zxin.aop13.SomeServiceImpl"/>
+    <bean id="someService2" class="com.zxin.aop13.SomeServiceImpl"/>
+    
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="com.zxin.aop13.MyAfterReturningAdvice"/>
+    
+    <!-- 注册切面：顾问 -->
+    <bean id="myAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+    	<property name="advice" ref="myAdvice"/>
+    	<property name="mappedNames" value="doFirst"/>
+    </bean>
+    <bean id="myAdvisor2" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+    	<property name="advice" ref="myAdvice"/>
+    	<property name="mappedNames" value="doSecond"/>
+    </bean>
+    
+    <!-- 注册自动代理生成器 -->
+    <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+    	<property name="beanNames" value="someService"/>
+    	<property name="interceptorNames" value="myAdvisor"/>
+    </bean>
+    
+    <!-- 
+    	DefaultAdvisorAutoProxyCreator存在三个问题：
+    	1）不能选择目标对象
+    	2）不能选择切面类型，切面只能是advisor
+    	3）不能选择advisor，所以advisor均将被作为切面织入到目标方法
+     -->
+</beans>

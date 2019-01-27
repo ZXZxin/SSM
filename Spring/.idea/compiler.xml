@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring_01_primary" />
+        <module name="spring_02_beanAssemble" />
+        <module name="spring_03_di" />
+        <module name="spring_04_di_annotation" />
+        <module name="spring_05_aopLeadin" />
+        <module name="spring_06_aop" />
+        <module name="spring_07_aspectj" />
+        <module name="spring_08_jdbcTemplate" />
+        <module name="spring_09_buyStock" />
+        <module name="spring_10_buyStock_txProxyFactoryBean" />
+        <module name="spring_11_buyStock_txAnnotation" />
+        <module name="spring_12_buyStock_txAspectj" />
+        <module name="spring_13_spring_mybatis" />
+        <module name="spring_14_spring_mybatis_2" />
+        <module name="spring_15_spring_web" />
+        <module name="spring_16_spring_web_2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Spring" target="1.7" />
+      <module name="spring_01_primary" target="1.7" />
+      <module name="spring_02_beanAssemble" target="1.7" />
+      <module name="spring_03_di" target="1.7" />
+      <module name="spring_04_di_annotation" target="1.7" />
+      <module name="spring_05_aopLeadin" target="1.7" />
+      <module name="spring_06_aop" target="1.7" />
+      <module name="spring_07_aspectj" target="1.7" />
+      <module name="spring_08_jdbcTemplate" target="1.7" />
+      <module name="spring_09_buyStock" target="1.7" />
+      <module name="spring_10_buyStock_txProxyFactoryBean" target="1.7" />
+      <module name="spring_11_buyStock_txAnnotation" target="1.7" />
+      <module name="spring_12_buyStock_txAspectj" target="1.7" />
+      <module name="spring_13_spring_mybatis" target="1.7" />
+      <module name="spring_14_spring_mybatis_2" target="1.7" />
+      <module name="spring_15_spring_web" target="1.7" />
+      <module name="spring_16_spring_web_2" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

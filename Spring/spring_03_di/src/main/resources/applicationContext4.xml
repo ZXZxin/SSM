@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- c命名空间构造注入　-->
+    <!-- 注册School -->
+    <bean id="mySchool" class="com.zxin.di04.School">
+    	<property name="name" value="清华大学"/>
+    </bean>
+    
+    <!-- 注册Student -->
+    <bean id="myStudent" class="com.zxin.di04.Student"
+    		c:name="赵六" c:age="26" c:school-ref="mySchool"/>
+
+</beans>

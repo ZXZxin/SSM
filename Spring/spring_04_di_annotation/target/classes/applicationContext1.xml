@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+	<!-- 扫描com.bjpowernode这个包及其子包 -->
+	<!-- <context:component-scan base-package="com.bjpowernode"/> -->
+	
+	<!-- 扫描com.bjpowernode这个包的子包 -->
+	<!-- <context:component-scan base-package="com.bjpowernode.*"/> -->
+
+	<!--组件扫描器的基本包-->
+	<context:component-scan base-package="com.zxin.di01"/>
+	
+</beans>

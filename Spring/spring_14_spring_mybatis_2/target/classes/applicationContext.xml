@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 注册数据源：C3P0 -->
+	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${jdbc.driver}"/>
+		<property name="jdbcUrl" value="${jdbc.url}"/>
+		<property name="user" value="${jdbc.user}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	
+	<!-- 注册属性文件 -->
+	<context:property-placeholder location="classpath:jdbc.properties"/>
+
+	<bean id="mySqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="configLocation" value="classpath:mybatis-config.xml"/> <!--但是这里主配置文件中已经没有了数据源了-->
+		<!--所以需要配置数据源-->
+		<property name="dataSource" ref="myDataSource"/>
+	</bean>
+	
+	<!-- 生成Dao的代理对象
+	 	 当前配置会为指定的基本包的所有接口生成代理对象
+	 -->
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<!--配置需要的sqlSessionFactory-->
+		<property name="sqlSessionFactoryBeanName" value="mySqlSessionFactory"/>
+		<!--指定基本包-->
+		<property name="basePackage" value="com.zxin.dao"/>
+	</bean>
+
+	<!--<context:component-scan base-package="com.zxin.*"/>-->
+	<!--&lt;!&ndash; 注册Service &ndash;&gt;-->
+	<bean id="studentService" class="com.zxin.service.StudentServiceImpl">
+		<!--这里不能再使用studentDao(已经删除), 所以使用接口的简单类名-->
+		<!-- 这里的Dao的注入需要使用ref属性，
+			若Dao的接口名的前两个字母是大写，则这里的值为接口的简单类名
+			若Dao的接口名的首字母是大写，第二个字母为小写，则这里的值为简单类名，但首字母要小写
+		 -->
+		<!--<property name="dao" ref="studentDao"/>-->
+		<property name="dao" ref="IStudentDao"/>
+	</bean>
+
+</beans>

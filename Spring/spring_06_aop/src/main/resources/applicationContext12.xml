@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="com.zxin.aop12.SomeServiceImpl"/>
+    <bean id="someService2" class="com.zxin.aop12.SomeServiceImpl"/>
+    
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="com.zxin.aop12.MyAfterReturningAdvice"/>
+
+    <!-- 注册切面：顾问 -->
+    <bean id="myAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+        <property name="advice" ref="myAdvice"/>
+        <property name="mappedNames" value="doFirst"/>
+    </bean>
+
+    <!-- 注册自动代理生成器 -->
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
+    
+</beans>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- 注册切面 -->
+	<bean id="myAspect" class="com.zxin.xml.MyAspect"/>
+	
+	<!-- 注册目标对象 -->
+	<bean id="someService" class="com.zxin.xml.SomeServiceImpl"/>
+	
+	<!-- AOP配置 -->
+	<aop:config>
+
+		<!--定义一些切入点表达式, 下面的切面中要使用-->
+		<aop:pointcut expression="execution(* *..ISomeService.doFirst(..))" id="doFirstPointcut"/>
+		<aop:pointcut expression="execution(* *..ISomeService.doSecond(..))" id="doSecondPointcut"/>
+		<aop:pointcut expression="execution(* *..ISomeService.doThird(..))" id="doThirdPointcut"/>
+
+		<!--定义切面 注意下面的不能用id 而是 ref-->
+		<aop:aspect ref="myAspect">
+			<aop:before method="myBefore" pointcut-ref="doFirstPointcut"/>
+			<aop:before method="myBefore(org.aspectj.lang.JoinPoint)" pointcut-ref="doFirstPointcut"/> <!--使用pointcut-ref,而不是pointcut-->
+			
+			<aop:after-returning method="myAfterReturning" pointcut-ref="doSecondPointcut"/>
+			<aop:after-returning method="myAfterReturning(java.lang.Object)" pointcut-ref="doSecondPointcut" returning="result"/> <!--这里的returning就是方法中的参数-->
+			
+			<aop:around method="myAround" pointcut-ref="doSecondPointcut"/>
+
+			<!--有参数的，　后面一般需要再加上一个参数-->
+			<aop:after-throwing method="myAfterThrowing" pointcut-ref="doThirdPointcut"/>
+			<aop:after-throwing method="myAfterThrowing(java.lang.Exception)" pointcut-ref="doThirdPointcut" throwing="ex"/>
+
+			<!--最终通知-->
+			<aop:after method="myAfter" pointcut-ref="doThirdPointcut"/>
+		</aop:aspect>
+	</aop:config>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

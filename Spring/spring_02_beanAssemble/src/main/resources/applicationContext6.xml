@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册Service id name 作用是差不多  -->
+    <bean id="myService" class="com.zxin.ba6.SomeServiceImpl"
+          init-method="setUp" destroy-method="tearDown"> <!--这两个方法是是必须要注册的-->
+        <property name="adao" value="aaa"/>  <!--这个是注入属性的值，后面会讲-->
+        <property name="bdao" value="bbb"/>
+    </bean>
+
+    <bean class="com.zxin.ba6.MyBeanPostProcessor"/>
+</beans>

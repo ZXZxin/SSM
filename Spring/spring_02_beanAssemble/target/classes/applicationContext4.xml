@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册Service，
+         scope="prototype" 原型模式，其对象的创建时机不是在Spring容器初始化时创建，而是在代码中真正访问时才创建
+         scope="singleton" 单例模式，其对象的创建时机是在Spring容器初始化时创建，是默认值
+      -->
+    <!--<bean id="myService" class="com.zxin.ba4.SomeServiceImpl" scope="singleton"/>-->
+    <bean id="myService" class="com.zxin.ba4.SomeServiceImpl" scope="prototype"/>
+
+
+</beans>

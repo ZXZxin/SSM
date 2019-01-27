@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Spring.iml" filepath="$PROJECT_DIR$/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_01_primary/spring_01_primary.iml" filepath="$PROJECT_DIR$/spring_01_primary/spring_01_primary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_02_beanAssemble/spring_02_beanAssemble.iml" filepath="$PROJECT_DIR$/spring_02_beanAssemble/spring_02_beanAssemble.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_03_di/spring_03_di.iml" filepath="$PROJECT_DIR$/spring_03_di/spring_03_di.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_04_di_annotation/spring_04_di_annotation.iml" filepath="$PROJECT_DIR$/spring_04_di_annotation/spring_04_di_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_05_aopLeadin/spring_05_aopLeadin.iml" filepath="$PROJECT_DIR$/spring_05_aopLeadin/spring_05_aopLeadin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_06_aop/spring_06_aop.iml" filepath="$PROJECT_DIR$/spring_06_aop/spring_06_aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_07_aspectj/spring_07_aspectj.iml" filepath="$PROJECT_DIR$/spring_07_aspectj/spring_07_aspectj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_08_jdbcTemplate/spring_08_jdbcTemplate.iml" filepath="$PROJECT_DIR$/spring_08_jdbcTemplate/spring_08_jdbcTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_09_buyStock/spring_09_buyStock.iml" filepath="$PROJECT_DIR$/spring_09_buyStock/spring_09_buyStock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_10_buyStock_txProxyFactoryBean/spring_10_buyStock_txProxyFactoryBean.iml" filepath="$PROJECT_DIR$/spring_10_buyStock_txProxyFactoryBean/spring_10_buyStock_txProxyFactoryBean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_11_buyStock_txAnnotation/spring_11_buyStock_txAnnotation.iml" filepath="$PROJECT_DIR$/spring_11_buyStock_txAnnotation/spring_11_buyStock_txAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_12_buyStock_txAspectj/spring_12_buyStock_txAspectj.iml" filepath="$PROJECT_DIR$/spring_12_buyStock_txAspectj/spring_12_buyStock_txAspectj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_13_spring_mybatis/spring_13_spring_mybatis.iml" filepath="$PROJECT_DIR$/spring_13_spring_mybatis/spring_13_spring_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_14_spring_mybatis_2/spring_14_spring_mybatis_2.iml" filepath="$PROJECT_DIR$/spring_14_spring_mybatis_2/spring_14_spring_mybatis_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_15_spring_web/spring_15_spring_web.iml" filepath="$PROJECT_DIR$/spring_15_spring_web/spring_15_spring_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_16_spring_web_2/spring_16_spring_web_2.iml" filepath="$PROJECT_DIR$/spring_16_spring_web_2/spring_16_spring_web_2.iml" />
+    </modules>
+  </component>
+</project>

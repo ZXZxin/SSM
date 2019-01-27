@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 注册数据源：Spring内置连接池 -->
+	<!-- 
+	<bean id="myDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${jdbc.driver}"/>
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${jdbc.user}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	 -->
+	 
+	<!-- 注册数据源：DBCP -->
+	<!-- 
+	<bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${jdbc.driver}"/>
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${jdbc.user}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	 -->
+	<!-- 注册数据源：C3P0 -->
+	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${jdbc.driver}"/>
+		<property name="jdbcUrl" value="${jdbc.url}"/>
+		<property name="user" value="${jdbc.user}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+
+	<!--注册属性文件(加载四要素的配置文件jdbc.properties)的两种方法-->
+	<!-- 注册属性文件：方式一 -->
+	<!-- 
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:jdbc.properties"/>
+	</bean>
+	 -->
+	<!-- 注册属性文件：方式二 -->
+	<context:property-placeholder location="classpath:jdbc.properties"/>
+	
+	<!-- 注册JdbcTemplate, 下面的方是是　注册数据源+JDBCTemplate ，但是因为在JdbcDaoSupport中有一段代码说如果JDBCTemplate是空，就会自动创建,所以这里可以省去注册JDBCTemplate -->
+	<!-- 
+	<bean id="myJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="myDataSource"/>
+	</bean>
+	<bean id="studentDao" class="com.bjpowernode.dao.StudentDaoImpl">
+		<property name="jdbcTemplate" ref="myJdbcTemplate"/>
+	</bean>
+	 -->
+
+	<!--这里是直接加载的数据源，上面注释的是加载的JdbcTemplate-->
+	<!-- 注册Dao -->
+	<bean id="studentDao" class="com.zxin.dao.StudentDaoImpl">
+		<property name="dataSource" ref="myDataSource"/>
+	</bean>
+	
+	<!-- 注册Service -->
+	<bean id="studentService" class="com.zxin.services.StudentServiceImpl">
+		<property name="dao" ref="studentDao"/>
+	</bean>
+
+</beans>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册School -->
+    <bean id="mySchool" class="com.zxin.di03.School" p:name="北京大学"/>
+    
+    <!-- 注册Student -->
+    <bean id="myStudent" class="com.zxin.di03.Student"
+    		p:name="王五" p:age="25" p:school-ref="mySchool"/>
+
+</beans>

@@ -1,0 +1,31 @@
+
+
+重点!!!
+
+
+`autowire`自动注入域属性(引用)
+
+autowire="byType" 会从容器中查找与实体类的域属性类型 具有**is-a**关系 的Bean，并将该Bean对象自动注入给该域属性
+
+
+```xml
+
+    <!-- 注册School -->
+    <bean id="mySchool" class="com.zxin.di08.School">
+        <property name="name" value="清华大学"/>
+    </bean>
+    
+    <!-- 注册School 的子类(清华附小)-->
+    <!-- 
+    <bean id="myPrimarySchool" class="com.zxin.di08.PrimarySchool">
+        <property name="address" value="海淀区"/>
+    </bean>
+     -->
+    <!-- 注册Student
+        autowire="byType" 会从容器中查找与实体类的域属性类型 具有is-a关系 的Bean，并将该Bean对象自动注入给该域属性
+     -->
+    <bean id="myStudent" class="com.zxin.di08.Student" autowire="byType">
+        <property name="name" value="张三"/>
+        <property name="age" value="23"/>
+    </bean>
+```

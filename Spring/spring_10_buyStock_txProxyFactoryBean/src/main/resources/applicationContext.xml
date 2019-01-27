@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- ================================= IoC ==================================== -->
+
+	<!-- 注册数据源：C3P0 -->
+	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${jdbc.driver}"/>
+		<property name="jdbcUrl" value="${jdbc.url}"/>
+		<property name="user" value="${jdbc.user}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	
+	<!-- 注册属性文件 -->
+	<context:property-placeholder location="classpath:jdbc.properties"/>
+	
+	<!-- 注册Dao -->
+	<bean id="accountDao" class="com.zxin.dao.AccountDaoImpl">
+		<property name="dataSource" ref="myDataSource"/>
+	</bean>
+	<bean id="stockDao" class="com.zxin.dao.StockDaoImpl">
+		<property name="dataSource" ref="myDataSource"/>
+	</bean>
+
+
+	<!--这里我注释了这个，因为在BuyStockServiceImpl使用了注解注入, 所以需要注册组件扫描器-->
+	<!--&lt;!&ndash; 注册Service &ndash;&gt;-->
+	<!--<bean id="buyStockService" class="com.zxin.service.BuyStockServiceImpl">-->
+		<!--<property name="adao" ref="accountDao"/>-->
+		<!--<property name="sdao" ref="stockDao"/>-->
+	<!--</bean>-->
+
+	<context:component-scan base-package="com.zxin.*"/>
+
+	<!-- ================================= AOP ==================================== -->
+
+	<!--注册事务管理器-->
+	<bean id="myTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="myDataSource"/>
+	</bean>
+
+	<!--生成事务代理对象-->
+	<bean id="serviceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager" ref="myTransactionManager"/>
+		<!--配置需要代理的目标对象-->
+		<property name="target" ref="buyStockService"/>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="open*">ISOLATION_DEFAULT,PROPAGATION_REQUIRED</prop>
+				<prop key="buyStock">ISOLATION_DEFAULT,PROPAGATION_REQUIRED, -BuyStockException</prop>
+			</props>
+		</property>
+	</bean>
+
+
+</beans>

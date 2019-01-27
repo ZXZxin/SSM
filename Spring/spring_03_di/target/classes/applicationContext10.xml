@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+    <!-- 注册Student -->
+    <bean id="myStudent" class="com.zxin.di10.Student">
+    	<property name="name" value="张三"/>
+    	<property name="age" value="23"/>
+    	<property name="school">
+			<!--这个就是内部bean 只能在Student中使用-->
+		    <bean class="com.zxin.di10.School">
+		    	<property name="name" value="清华大学"/>
+		    </bean>
+    	</property>
+    </bean>
+
+</beans>

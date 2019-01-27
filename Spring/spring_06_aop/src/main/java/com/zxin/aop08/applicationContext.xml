@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="com.zxin.aop08.SomeServiceImpl"/>
+    
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="com.zxin.aop08.MyAfterReturningAdvice"/>
+    
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+    	<property name="interceptorNames" value="myAdvice"/>
+    	<property name="optimize" value="true"/>
+    	 <property name="proxyTargetClass" value="true"/>
+    </bean>
+
+</beans>

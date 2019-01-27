@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 注册数据源：C3P0 -->
+	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${jdbc.driver}"/>
+		<property name="jdbcUrl" value="${jdbc.url}"/>
+		<property name="user" value="${jdbc.user}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	
+	<!-- 注册属性文件 -->
+	<context:property-placeholder location="classpath:jdbc.properties"/>
+	
+	<bean id="mySqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!--
+			需要配置mybatis主配置文件的路径,相当于下面的代码
+		 	inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+            // 2. 创建sqlSessionFactory对象
+            SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream); //在build的时候就会自己关闭inputStream(源码中)
+            // 3. 创建 sqlSession
+            sqlSession = sqlSessionFactory.openSession();
+		-->
+		<property name="configLocation" value="classpath:mybatis-config.xml"/> <!--但是这里主配置文件中已经没有了数据源了-->
+		<!--所以需要配置数据源-->
+		<property name="dataSource" ref="myDataSource"/>
+	</bean>
+	
+	<!-- 生成Dao的代理对象 -->
+	<bean id="studentDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<!--配置需要的sqlSessionFactory-->
+		<property name="sqlSessionFactory" ref="mySqlSessionFactory"/>
+		<!--这个就是那个需要代理的dao-->
+		<property name="mapperInterface" value="com.zxin.dao.IStudentDao"/>
+	</bean>
+	
+	<!-- 注册Service -->
+	<bean id="studentService" class="com.zxin.service.StudentServiceImpl">
+		<property name="dao" ref="studentDao"/>
+	</bean>
+
+</beans>
